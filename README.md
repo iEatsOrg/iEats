@@ -76,4 +76,4 @@ Optional:
 * Create a recipe -> After form is filled in goes to favorites
 
 ## Wireframes
-<img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
+<img src="/iEats Wireframe.jpg" width=800><br>

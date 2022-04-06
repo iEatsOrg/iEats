@@ -6,6 +6,7 @@ Unit 8: Group Milestone - README
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+1. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -77,3 +78,80 @@ Optional:
 
 ## Wireframes
 <img src="/iEats Wireframe.jpg" width=800><br>
+
+## Schema 
+### Models
+#### Recipe
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the recipe (default field) |
+   | title         | String   | Title of recipe |
+   | image         | File     | image of recipe |
+   | description   | String   | description of recipe |
+   | ingredients   | String   | ingredients for recipe |
+   | directions    | String   | directions for recipe |
+   | category      | String   | category of dish |
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user (default field) |
+   | username      | String   | username for user |
+   | password      | String   | password for user |
+   | prefrences    | String   | list of user prefrences |
+   | favorites     | Pointer to Recipe   | favorited recipes |
+   
+### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query suggested recipes
+         ```swift
+         let query = PFQuery(className:"Recipe")
+         query.whereKey("category", equalTo: currentUser.prefrences)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let recipes = recipes {
+               print("Successfully retrieved \(recipes.count) recipes.")
+           // TODO: Do something with recipes...
+            }
+         }
+         ```
+   - All Recipes Screen
+     - (Read/GET) Query all recipes
+         ```swift
+         let query = PFQuery(className:"Recipe")
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let recipes = recipes {
+               print("Successfully retrieved \(recipes.count) recipes.")
+           // TODO: Do something with recipes...
+            }
+         }
+         ```
+  - Specific Recipe Screen
+      - (Read/GET) Query specific recipes
+         ```swift
+         let query = PFQuery(className:"Recipe")
+         query.whereKey("id", equalTo: currentRecipe.id)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let recipe = recipe {
+               print("Successfully retrieved \(recipe.count) recipe.")
+           // TODO: Do something with recipe...
+            }
+         }
+         ```
+      
+   - Create Recipe Screen
+      - (Create/POST) Create a new recipe
+   - Favorties Screen
+      - (Read/GET) Query logged in user object
+      - (Read/GET) Query for recipes that are favorited by user
+      - (Delete) Delete user created recipe

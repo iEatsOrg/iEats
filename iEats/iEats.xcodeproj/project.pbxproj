@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BE0912573B1A58A18CD4986 /* Pods_iEatsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB96893B442A52283EB02AD /* Pods_iEatsTests.framework */; };
+		27C5309328068B570007A3C7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5309228068B570007A3C7 /* RecipeCell.swift */; };
 		34002DEE0D4226EE75203E68 /* Pods_iEats_iEatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */; };
 		49BCF0FF280685620019B736 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCF0FE280685620019B736 /* RecipeViewController.swift */; };
 		8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1CB1FCBE2724E1EA59D6E2A8 /* Pods-iEats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats.release.xcconfig"; path = "Target Support Files/Pods-iEats/Pods-iEats.release.xcconfig"; sourceTree = "<group>"; };
+		27C5309228068B570007A3C7 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		2CB96893B442A52283EB02AD /* Pods_iEatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A5D1C61EF49A5BF2303FFA /* Pods-iEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats.debug.xcconfig"; path = "Target Support Files/Pods-iEats/Pods-iEats.debug.xcconfig"; sourceTree = "<group>"; };
 		49BCF0FE280685620019B736 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				8CC3B86B2805E53F00F56A97 /* Info.plist */,
 				8CC3B88D2805EBCC00F56A97 /* LoginViewController.swift */,
 				8CC3B88F2806549F00F56A97 /* RegisterViewController.swift */,
+				27C5309228068B570007A3C7 /* RecipeCell.swift */,
 			);
 			path = iEats;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				8CC3B88E2805EBCC00F56A97 /* LoginViewController.swift in Sources */,
 				8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */,
 				8CC3B8602805E53E00F56A97 /* SceneDelegate.swift in Sources */,
+				27C5309328068B570007A3C7 /* RecipeCell.swift in Sources */,
 				8CC3B8902806549F00F56A97 /* RegisterViewController.swift in Sources */,
 				49BCF0FF280685620019B736 /* RecipeViewController.swift in Sources */,
 			);

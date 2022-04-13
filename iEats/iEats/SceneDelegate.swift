@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  iEats
 //
-//  Created by Steven Schreiber on 4/12/22.
+//  Created by Aundre Labrador on 4/12/22.
 //
 
 import UIKit

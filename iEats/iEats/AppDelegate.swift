@@ -2,10 +2,11 @@
 //  AppDelegate.swift
 //  iEats
 //
-//  Created by Steven Schreiber on 4/12/22.
+//  Created by Aundre Labrador on 4/12/22.
 //
 
 import UIKit
+import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "EyG5UOLw9Xa80DpLHxCZ3Y0gvpHY34zz3JHrTGi3"
+                    $0.clientKey = "tCUqBOTXLFAqbnrPuEXNBYlLBM2vq2kJRccB0seR"
+                    $0.server = "https://parseapi.back4app.com"
+        }
+        Parse.initialize(with: parseConfig)
+        
         return true
     }
 

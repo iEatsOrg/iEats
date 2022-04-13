@@ -166,4 +166,4 @@ Optional:
 
 ## Progress (via Gifs)
 ### Sprint 1
-<img src="https://github.com/iEatsOrg/iEats/blob/main/sprint1.gif">
+<img src="Week1.gif">

@@ -25,8 +25,11 @@ Suggests new recipes for users to make based off their tastes. Users can also fa
 
 **Required Must-have Stories**
 
-* - [x] User logs page design.
-* - [ ] User logs page logic.
+* - [x] User login page design.
+* - [ ] User login page logic.
+* - [X] Regoster page design
+* - [ ] Register page logic
+* - [X] Create and Setup Database
 * - [x] Suggested recipe page after log in design.
 * - [ ] Suggested recipe page after log in logic.
 * - [ ] User can favorite recipes.
@@ -160,3 +163,7 @@ Optional:
       - (Read/GET) Query logged in user object
       - (Read/GET) Query for recipes that are favorited by user
       - (Delete) Delete user created recipe
+
+## Progress (via Gifs)
+### Sprint 1
+<img src="https://github.com/iEatsOrg/iEats/blob/main/sprint1.gif">

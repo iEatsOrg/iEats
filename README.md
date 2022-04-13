@@ -25,12 +25,17 @@ Suggests new recipes for users to make based off their tastes. Users can also fa
 
 **Required Must-have Stories**
 
-* User logs in to access a new suggested recipe.
-* User picks can favorite recipes.
-* Suggested recipes are tailored to a user's taste and will not repeat.
-* Recipe pages for each recipe.
-* Page for favorited recipes.
-* User can create their own recipe
+* - [x] User logs page design.
+* - [ ] User logs page logic.
+* - [x] Suggested recipe page after log in design.
+* - [ ] Suggested recipe page after log in logic.
+* - [ ] User can favorite recipes.
+* - [ ] Suggested recipes are tailored to a user's taste and will not repeat.
+* - [ ] Recipe pages for each recipe.
+* - [x] Page for favorited recipes design.
+* - [ ] Logic for page for favorited recipes.
+* - [ ] User can create their own recipe design.
+* - [ ] User can create their own recipe logic.
 
 **Optional Nice-to-have Stories**
 

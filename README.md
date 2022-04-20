@@ -1,6 +1,6 @@
 Unit 8: Group Milestone - README
 ===
-# iEats
+# LivFit
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -10,15 +10,15 @@ Unit 8: Group Milestone - README
 
 ## Overview
 ### Description
-Suggests new recipes for users to make based off their tastes. Users can also favorite their favorite recipes and even make their own recipes. App can be used to track all of a users favorite recipes on top of just suggesting.
+Suggests healthy recipes for users to make and also exercises they can do to stay healthy. 
 
 ### App Evaluation
-- **Category:** Food
+- **Category:** Health
 - **Mobile:** This app would be primarily developed for mobile. Functionality will be limited to mobile devices, however it could work on computers.
-- **Story:** Analyzes users taste, and suggest recipes they might like to make. The user can then favorite their preferred recipes to not lose track of them.
-- **Market:** Any individual that is interested in making their own food and trying new recipes.
-- **Habit:** This app could be used as often or unoften as the user wanted depending on whether they are looking for a recipe to make in the moment or to make at a later time.
-- **Scope:** First we would start with people that are already into cooking, then we could broaden our scope to people that are wanting to get into cooking. 
+- **Story:** Suggests healthy recipes and exercises to users to keep them healthy
+- **Market:** Any individual that is interested in living a healthier life.
+- **Habit:** This app would be used daily and even multiple times a day when users decide they want to exercise or make a healthy meal.
+- **Scope:** First we would start with people that are already motivated to lead a healthy life, then we could broaden our scope to people that are wanting to get into exercising and being healthier. 
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
@@ -27,24 +27,24 @@ Suggests new recipes for users to make based off their tastes. Users can also fa
 
 * - [x] User login page design.
 * - [ ] User login page logic.
-* - [X] Regoster page design
+* - [X] Register page design
 * - [ ] Register page logic
 * - [X] Create and Setup Database
-* - [x] Suggested recipe page after log in design.
-* - [ ] Suggested recipe page after log in logic.
-* - [ ] User can favorite recipes.
-* - [ ] Suggested recipes are tailored to a user's taste and will not repeat.
-* - [ ] Recipe pages for each recipe.
-* - [x] Page for favorited recipes design.
-* - [ ] Logic for page for favorited recipes.
-* - [ ] User can create their own recipe design.
-* - [ ] User can create their own recipe logic.
+* - [x] All recipes page design.
+* - [ ] All recipes page logic.
+* - [x] Recipe page design.
+* - [ ] Recipe page logic.
+* - [x] All workouts page design.
+* - [ ] All workouts page logic.
+* - [x] Workout page design.
+* - [ ] Workout page logic.
+* - [ ] Landing page.
 
 **Optional Nice-to-have Stories**
 
 * Profile page
-* Page of most favorited recipes
-* User created recipes can become available to other users
+* User can favorite recipes.
+* User can create their own recipe
 * Random recipe suggestion button
 * Add comments/review recipe
 * Star ranking for recipes
@@ -55,51 +55,39 @@ Suggests new recipes for users to make based off their tastes. Users can also fa
 * Login 
 * Register - User signs up or logs into their account
    * Upon register users will be asked for their taste to be properly suggested recipes they'll like.
-* Suggestion Screen - Displays the recipe page for suggested recipe
+* Landing page - Welocmes the user
    * Will have a navigation bar to access other screens.
 * Recipe Screen 
    * Displays all the information for a given recipe.
 * Recipes Screen.
    * Will display a picture and name of all recipes in a column the user can scroll through. They can click on a specific recipe to go to its respective screen
-* Favorite Recipes Screen
-   * Will display all recipes favorited by a user.
-* Create a Recipe Screen
-   * Will display a form a user can fill in to create their own recipe. Recipes created by users will be automatically favorited, unfavortied recipes will be deleted.
+* Workout Screen 
+   * Displays all the information for a given workout routine.
+* Workouts Screen.
+   * Will display a column of available workout routines
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
 * Recipe selection
-* Create Recipe
+* Workout selection
 
 Optional:
-* User created recipes
 * Random recipe
+* Random workout
 
 **Flow Navigation** (Screen to Screen)
 * Forced Log-in -> Account creation if no log in is available
-* Recipe Suggestion -> Navigation bar can go to all other recipes, favorites, or create a recipe
+* landing page -> Navigation bar can go to all other recipes, favorites, or create a recipe
 * All recipes -> Display specific recipe. 
-* Favorites -> Display specific recipe
-* Create a recipe -> After form is filled in goes to favorites
+* All workouts -> Display specific workout. 
 
 ## Wireframes
 <img src="/iEats Wireframe.jpg" width=800><br>
 
 ## Schema 
 ### Models
-#### Recipe
-
-   | Property      | Type     | Description |
-   | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the recipe (default field) |
-   | title         | String   | Title of recipe |
-   | image         | File     | image of recipe |
-   | description   | String   | description of recipe |
-   | ingredients   | String   | ingredients for recipe |
-   | directions    | String   | directions for recipe |
-   | category      | String   | category of dish |
 #### User
 
    | Property      | Type     | Description |
@@ -107,26 +95,9 @@ Optional:
    | objectId      | String   | unique id for the user (default field) |
    | username      | String   | username for user |
    | password      | String   | password for user |
-   | prefrences    | String   | list of user prefrences |
-   | favorites     | Pointer to Recipe   | favorited recipes |
    
 ### Networking
 #### List of network requests by screen
-   - Home Feed Screen
-      - (Read/GET) Query suggested recipes
-         ```swift
-         let query = PFQuery(className:"Recipe")
-         query.whereKey("category", equalTo: currentUser.prefrences)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let recipes = recipes {
-               print("Successfully retrieved \(recipes.count) recipes.")
-           // TODO: Do something with recipes...
-            }
-         }
-         ```
    - All Recipes Screen
      - (Read/GET) Query all recipes
          ```swift
@@ -156,13 +127,36 @@ Optional:
             }
          }
          ```
+ - All Workouts Screen
+     - (Read/GET) Query all recipes
+         ```swift
+         let query = PFQuery(className:"Workout")
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let workouts = workouts {
+               print("Successfully retrieved \(Workout.count) recipes.")
+           // TODO: Do something with Workout...
+            }
+         }
+         ```
+  - Specific Workout Screen
+      - (Read/GET) Query specific recipes
+         ```swift
+         let query = PFQuery(className:"Workout")
+         query.whereKey("id", equalTo: currentWorkout.id)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let workout = workout {
+               print("Successfully retrieved \(Workout.count) recipe.")
+           // TODO: Do something with Workout...
+            }
+         }
+         ```
       
-   - Create Recipe Screen
-      - (Create/POST) Create a new recipe
-   - Favorties Screen
-      - (Read/GET) Query logged in user object
-      - (Read/GET) Query for recipes that are favorited by user
-      - (Delete) Delete user created recipe
 
 ## Progress (via Gifs)
 ### Sprint 1

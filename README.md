@@ -84,7 +84,7 @@ Optional:
 * All workouts -> Display specific workout. 
 
 ## Wireframes
-<img src="/iEats Wireframe.jpg" width=800><br>
+<img src="/LivFitWireframe.jpg" width=800><br>
 
 ## Schema 
 ### Models

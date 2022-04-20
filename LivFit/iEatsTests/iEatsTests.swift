@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import iEats
+@testable import LivFit
 
 class iEatsTests: XCTestCase {
 

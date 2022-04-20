@@ -50,16 +50,16 @@
 		5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEats_iEatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703F2E4578B41B1A9A5536EA /* Pods-iEats-iEatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats-iEatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iEats-iEatsUITests/Pods-iEats-iEatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F571DFEBAAB326A485BA641 /* Pods-iEatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEatsTests.release.xcconfig"; path = "Target Support Files/Pods-iEatsTests/Pods-iEatsTests.release.xcconfig"; sourceTree = "<group>"; };
-		8CC3B85A2805E53E00F56A97 /* iEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3B85A2805E53E00F56A97 /* LivFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8CC3B8642805E53E00F56A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CC3B8662805E53F00F56A97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC3B8692805E53F00F56A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC3B86B2805E53F00F56A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CC3B8702805E53F00F56A97 /* iEatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iEatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3B8702805E53F00F56A97 /* LivFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3B8742805E53F00F56A97 /* iEatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEatsTests.swift; sourceTree = "<group>"; };
-		8CC3B87A2805E54000F56A97 /* iEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC3B87A2805E54000F56A97 /* LivFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3B87E2805E54000F56A97 /* iEatsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEatsUITests.swift; sourceTree = "<group>"; };
 		8CC3B8802805E54000F56A97 /* iEatsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iEatsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8CC3B88D2805EBCC00F56A97 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		8CC3B8512805E53E00F56A97 = {
 			isa = PBXGroup;
 			children = (
-				8CC3B85C2805E53E00F56A97 /* iEats */,
+				8CC3B85C2805E53E00F56A97 /* LivFit */,
 				8CC3B8732805E53F00F56A97 /* iEatsTests */,
 				8CC3B87D2805E54000F56A97 /* iEatsUITests */,
 				8CC3B85B2805E53E00F56A97 /* Products */,
@@ -122,14 +122,14 @@
 		8CC3B85B2805E53E00F56A97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CC3B85A2805E53E00F56A97 /* iEats.app */,
-				8CC3B8702805E53F00F56A97 /* iEatsTests.xctest */,
-				8CC3B87A2805E54000F56A97 /* iEatsUITests.xctest */,
+				8CC3B85A2805E53E00F56A97 /* LivFit.app */,
+				8CC3B8702805E53F00F56A97 /* LivFitTests.xctest */,
+				8CC3B87A2805E54000F56A97 /* LivFitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8CC3B85C2805E53E00F56A97 /* iEats */ = {
+		8CC3B85C2805E53E00F56A97 /* LivFit */ = {
 			isa = PBXGroup;
 			children = (
 				8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */,
@@ -143,7 +143,7 @@
 				8CC3B88F2806549F00F56A97 /* RegisterViewController.swift */,
 				27C5309228068B570007A3C7 /* RecipeCell.swift */,
 			);
-			path = iEats;
+			path = LivFit;
 			sourceTree = "<group>";
 		};
 		8CC3B8732805E53F00F56A97 /* iEatsTests */ = {
@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CC3B8592805E53E00F56A97 /* iEats */ = {
+		8CC3B8592805E53E00F56A97 /* LivFit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CC3B8842805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEats" */;
+			buildConfigurationList = 8CC3B8842805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFit" */;
 			buildPhases = (
 				08D54E5063BC227F92F109B5 /* [CP] Check Pods Manifest.lock */,
 				8CC3B8562805E53E00F56A97 /* Sources */,
@@ -193,14 +193,14 @@
 			);
 			dependencies = (
 			);
-			name = iEats;
+			name = LivFit;
 			productName = iEats;
-			productReference = 8CC3B85A2805E53E00F56A97 /* iEats.app */;
+			productReference = 8CC3B85A2805E53E00F56A97 /* LivFit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CC3B86F2805E53F00F56A97 /* iEatsTests */ = {
+		8CC3B86F2805E53F00F56A97 /* LivFitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CC3B8872805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEatsTests" */;
+			buildConfigurationList = 8CC3B8872805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFitTests" */;
 			buildPhases = (
 				33F19ADF836C6C1360EAFB19 /* [CP] Check Pods Manifest.lock */,
 				8CC3B86C2805E53F00F56A97 /* Sources */,
@@ -212,14 +212,14 @@
 			dependencies = (
 				8CC3B8722805E53F00F56A97 /* PBXTargetDependency */,
 			);
-			name = iEatsTests;
+			name = LivFitTests;
 			productName = iEatsTests;
-			productReference = 8CC3B8702805E53F00F56A97 /* iEatsTests.xctest */;
+			productReference = 8CC3B8702805E53F00F56A97 /* LivFitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8CC3B8792805E54000F56A97 /* iEatsUITests */ = {
+		8CC3B8792805E54000F56A97 /* LivFitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CC3B88A2805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEatsUITests" */;
+			buildConfigurationList = 8CC3B88A2805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFitUITests" */;
 			buildPhases = (
 				BAD6795F3884094E24952445 /* [CP] Check Pods Manifest.lock */,
 				8CC3B8762805E54000F56A97 /* Sources */,
@@ -232,9 +232,9 @@
 			dependencies = (
 				8CC3B87C2805E54000F56A97 /* PBXTargetDependency */,
 			);
-			name = iEatsUITests;
+			name = LivFitUITests;
 			productName = iEatsUITests;
-			productReference = 8CC3B87A2805E54000F56A97 /* iEatsUITests.xctest */;
+			productReference = 8CC3B87A2805E54000F56A97 /* LivFitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +260,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CC3B8552805E53E00F56A97 /* Build configuration list for PBXProject "iEats" */;
+			buildConfigurationList = 8CC3B8552805E53E00F56A97 /* Build configuration list for PBXProject "LivFit" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,9 +273,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CC3B8592805E53E00F56A97 /* iEats */,
-				8CC3B86F2805E53F00F56A97 /* iEatsTests */,
-				8CC3B8792805E54000F56A97 /* iEatsUITests */,
+				8CC3B8592805E53E00F56A97 /* LivFit */,
+				8CC3B86F2805E53F00F56A97 /* LivFitTests */,
+				8CC3B8792805E54000F56A97 /* LivFitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -446,12 +446,12 @@
 /* Begin PBXTargetDependency section */
 		8CC3B8722805E53F00F56A97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CC3B8592805E53E00F56A97 /* iEats */;
+			target = 8CC3B8592805E53E00F56A97 /* LivFit */;
 			targetProxy = 8CC3B8712805E53F00F56A97 /* PBXContainerItemProxy */;
 		};
 		8CC3B87C2805E54000F56A97 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CC3B8592805E53E00F56A97 /* iEats */;
+			target = 8CC3B8592805E53E00F56A97 /* LivFit */;
 			targetProxy = 8CC3B87B2805E54000F56A97 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -596,13 +596,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46A5D1C61EF49A5BF2303FFA /* Pods-iEats.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BY8GKNZJUP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iEats/Info.plist;
+				INFOPLIST_FILE = LivFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -613,7 +612,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = aundrelab.iEats;
+				PRODUCT_BUNDLE_IDENTIFIER = aundrelab.LivFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -625,13 +624,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CB1FCBE2724E1EA59D6E2A8 /* Pods-iEats.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BY8GKNZJUP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iEats/Info.plist;
+				INFOPLIST_FILE = LivFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -642,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = aundrelab.iEats;
+				PRODUCT_BUNDLE_IDENTIFIER = aundrelab.LivFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -667,7 +665,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iEats.app/iEats";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LivFit.app/LivFit";
 			};
 			name = Debug;
 		};
@@ -688,7 +686,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iEats.app/iEats";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LivFit.app/LivFit";
 			};
 			name = Release;
 		};
@@ -733,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CC3B8552805E53E00F56A97 /* Build configuration list for PBXProject "iEats" */ = {
+		8CC3B8552805E53E00F56A97 /* Build configuration list for PBXProject "LivFit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC3B8822805E54000F56A97 /* Debug */,
@@ -742,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CC3B8842805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEats" */ = {
+		8CC3B8842805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC3B8852805E54000F56A97 /* Debug */,
@@ -751,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CC3B8872805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEatsTests" */ = {
+		8CC3B8872805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC3B8882805E54000F56A97 /* Debug */,
@@ -760,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CC3B88A2805E54000F56A97 /* Build configuration list for PBXNativeTarget "iEatsUITests" */ = {
+		8CC3B88A2805E54000F56A97 /* Build configuration list for PBXNativeTarget "LivFitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CC3B88B2805E54000F56A97 /* Debug */,

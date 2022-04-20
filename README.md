@@ -161,3 +161,4 @@ Optional:
 ## Progress (via Gifs)
 ### Sprint 1
 <img src="Week1.gif">
+<img src="Week2.gif">

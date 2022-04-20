@@ -34,9 +34,9 @@ Suggests healthy recipes for users to make and also exercises they can do to sta
 * - [ ] All recipes page logic.
 * - [x] Recipe page design.
 * - [ ] Recipe page logic.
-* - [x] All workouts page design.
+* - [ ] All workouts page design.
 * - [ ] All workouts page logic.
-* - [x] Workout page design.
+* - [ ] Workout page design.
 * - [ ] Workout page logic.
 * - [ ] Landing page.
 

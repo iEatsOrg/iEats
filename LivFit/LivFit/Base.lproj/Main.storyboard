@@ -441,7 +441,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="v0j-7r-76V"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLogin" id="v0j-7r-76V"/>
                                 </connections>
                             </button>
                         </subviews>

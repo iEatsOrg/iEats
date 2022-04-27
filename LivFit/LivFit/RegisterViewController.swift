@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController {
         user.password = passwordField.text
         
         user.signUpInBackground{(success, error) in if success{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.performSegue(withIdentifier: "registerSegue", sender: nil)
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }

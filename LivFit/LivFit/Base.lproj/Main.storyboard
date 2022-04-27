@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -375,7 +375,7 @@
         <!--Register View Controller-->
         <scene sceneID="mBb-eH-zBG">
             <objects>
-                <viewController storyboardIdentifier="RegisterViewController" modalPresentationStyle="fullScreen" id="0VV-yQ-Yar" customClass="RegisterViewController" customModule="LivFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="0VV-yQ-Yar" customClass="RegisterViewController" customModule="LivFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bt6-M1-1Zb" customClass="Register">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,6 +454,7 @@
                         <outlet property="nameField" destination="g7z-uQ-wuy" id="kii-dJ-y6x"/>
                         <outlet property="passwordField" destination="NTG-J4-6Yd" id="48R-m2-vTn"/>
                         <outlet property="usernameField" destination="Az2-gY-1NG" id="2cq-Op-yic"/>
+                        <segue destination="WOw-Bn-wfB" kind="presentation" identifier="registerSegue" id="FjE-zJ-WKh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4A-cT-dyY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -577,6 +578,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="FjE-zJ-WKh"/>
         <segue reference="v0j-7r-76V"/>
     </inferredMetricsTieBreakers>
     <resources>

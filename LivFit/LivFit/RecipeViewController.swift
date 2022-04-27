@@ -43,15 +43,27 @@ class RecipeViewController: UIViewController {
 
                 self.recipe = dataDictionary["recipe"] as! [String:Any]?
                 
+                let totalNutrients = self.recipe["totalNutrients"] as! [String:Any]?
+                let protein = totalNutrients?["PROCNT"] as! [String:Any]?
+                let fat = totalNutrients?["FAT"] as! [String:Any]?
+                let carb = totalNutrients?["CHOCDF"] as! [String:Any]?
+                let p = String(format: "%@", protein?["quantity"] as! CVarArg)
+                let f = String(format: "%@", fat?["quantity"] as! CVarArg)
+                let c = String(format: "%@", carb?["quantity"] as! CVarArg)
+
                 let labels = self.recipe["healthLabels"] as! [String]
                 
                 for label in labels {
-                    healthLabels += label
+                    healthLabels += label + ", "
                 }
                                   
                 self.dishNameLabel.text = self.recipe["label"]! as? String
                 self.healthLabel.text = healthLabels
-                
+                self.numOfServingsLabel.text = self.recipe["yield"]! as? String
+                self.calAmountLabel.text = self.recipe["calories"]! as? String
+                self.proteinAmountLabel.text = p
+                self.fatAmountLabel.text = f
+                self.carbAmountLabel.text = c
                 
                 let imageURL = URL(string: self.recipe["image"] as! String)
                 self.recipeView.af.setImage(withURL: imageURL!)

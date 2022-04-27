@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,10 +20,18 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignIn(_ sender: Any) {
+        let userName = username.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: userName, password: password) { (user, error) in
+            if user != nil{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else{
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
     }
     
-    @IBAction func onSignUp(_ sender: Any) {
-    }
     
     
     /*

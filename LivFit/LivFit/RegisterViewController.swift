@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Parse
 class RegisterViewController: UIViewController {
 
     
@@ -14,6 +14,20 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user["name"] = nameField.text
+        user.username = usernameField.text
+        user.password = passwordField.text
+        
+        user.signUpInBackground{(success, error) in if success{
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

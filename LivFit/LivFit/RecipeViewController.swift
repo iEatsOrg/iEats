@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class RecipeViewController: UIViewController {
     
@@ -20,6 +21,8 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var moreInfoLink: UITextView!
     @IBOutlet weak var getRecipeLink: UITextView!
     
+    @IBOutlet weak var recipeView: UIImageView!
+    
     var recipe: [String:Any]!
 
     override func viewDidLoad() {
@@ -31,18 +34,28 @@ class RecipeViewController: UIViewController {
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
-             // This will run when the network request returns
-             if let error = error {
+            // This will run when the network request returns
+            if let error = error {
                 print(error.localizedDescription)
-             } else if let data = data {
+            } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                var healthLabels = ""
 
-                 self.recipe = dataDictionary["recipe"] as! [String:Any]?
-                 
-                 print(dataDictionary)
-                 
-                 self.dishNameLabel.text = self.recipe["label"]! as? String
-                 self.healthLabel.text = self.recipe["label"]! as? String
+                self.recipe = dataDictionary["recipe"] as! [String:Any]?
+                
+                let labels = self.recipe["healthLabels"] as! [String]
+                
+                for label in labels {
+                    healthLabels += label
+                }
+                                  
+                self.dishNameLabel.text = self.recipe["label"]! as? String
+                self.healthLabel.text = healthLabels
+                
+                
+                let imageURL = URL(string: self.recipe["image"] as! String)
+                self.recipeView.af.setImage(withURL: imageURL!)
+
              }
         }
         task.resume()

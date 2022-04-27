@@ -11,6 +11,8 @@
 		27C5309328068B570007A3C7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5309228068B570007A3C7 /* RecipeCell.swift */; };
 		34002DEE0D4226EE75203E68 /* Pods_iEats_iEatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */; };
 		49BCF0FF280685620019B736 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCF0FE280685620019B736 /* RecipeViewController.swift */; };
+		49C461542818AB38000D3CE8 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C461532818AB38000D3CE8 /* WorkoutViewController.swift */; };
+		49C461572818B8E5000D3CE8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 49C461562818B8E5000D3CE8 /* AlamofireImage */; };
 		49D492B7280FDB3A00266FB4 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D492B6280FDB3A00266FB4 /* NSAttributedStringExtension.swift */; };
 		8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */; };
 		8CC3B8602805E53E00F56A97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */; };
@@ -48,6 +50,7 @@
 		2CB96893B442A52283EB02AD /* Pods_iEatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A5D1C61EF49A5BF2303FFA /* Pods-iEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats.debug.xcconfig"; path = "Target Support Files/Pods-iEats/Pods-iEats.debug.xcconfig"; sourceTree = "<group>"; };
 		49BCF0FE280685620019B736 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		49C461532818AB38000D3CE8 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		49D492B6280FDB3A00266FB4 /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
 		5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEats_iEatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703F2E4578B41B1A9A5536EA /* Pods-iEats-iEatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats-iEatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iEats-iEatsUITests/Pods-iEats-iEatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07D0FFA5438D7A520ABE5DE /* Pods_iEats.framework in Frameworks */,
+				49C461572818B8E5000D3CE8 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +142,7 @@
 				8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */,
 				8CC3B8632805E53E00F56A97 /* Main.storyboard */,
 				49BCF0FE280685620019B736 /* RecipeViewController.swift */,
+				49C461532818AB38000D3CE8 /* WorkoutViewController.swift */,
 				49D492B6280FDB3A00266FB4 /* NSAttributedStringExtension.swift */,
 				8CC3B8662805E53F00F56A97 /* Assets.xcassets */,
 				8CC3B8682805E53F00F56A97 /* LaunchScreen.storyboard */,
@@ -197,6 +202,9 @@
 			dependencies = (
 			);
 			name = LivFit;
+			packageProductDependencies = (
+				49C461562818B8E5000D3CE8 /* AlamofireImage */,
+			);
 			productName = iEats;
 			productReference = 8CC3B85A2805E53E00F56A97 /* LivFit.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 8CC3B8512805E53E00F56A97;
+			packageReferences = (
+				49C461552818B8E5000D3CE8 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 8CC3B85B2805E53E00F56A97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -418,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C461542818AB38000D3CE8 /* WorkoutViewController.swift in Sources */,
 				8CC3B88E2805EBCC00F56A97 /* LoginViewController.swift in Sources */,
 				8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */,
 				8CC3B8602805E53E00F56A97 /* SceneDelegate.swift in Sources */,
@@ -772,6 +784,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		49C461552818B8E5000D3CE8 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49C461562818B8E5000D3CE8 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49C461552818B8E5000D3CE8 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CC3B8522805E53E00F56A97 /* Project object */;
 }

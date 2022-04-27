@@ -162,3 +162,4 @@ Optional:
 ### Sprint 1
 <img src="Week1.gif">
 <img src="Week2.gif">
+<img src="Week3.gif">

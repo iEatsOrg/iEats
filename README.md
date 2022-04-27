@@ -26,19 +26,19 @@ Suggests healthy recipes for users to make and also exercises they can do to sta
 **Required Must-have Stories**
 
 * - [x] User login page design.
-* - [ ] User login page logic.
+* - [x] User login page logic.
 * - [X] Register page design
-* - [ ] Register page logic
+* - [x] Register page logic
 * - [X] Create and Setup Database
 * - [x] All recipes page design.
 * - [ ] All recipes page logic.
 * - [x] Recipe page design.
-* - [ ] Recipe page logic.
+* - [x] Recipe page logic.
 * - [ ] All workouts page design.
 * - [ ] All workouts page logic.
-* - [ ] Workout page design.
-* - [ ] Workout page logic.
-* - [ ] Landing page.
+* - [x] Workout page design.
+* - [x] Workout page logic.
+* - [x] Landing page.
 
 **Optional Nice-to-have Stories**
 

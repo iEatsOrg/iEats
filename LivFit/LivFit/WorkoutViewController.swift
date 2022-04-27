@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import Foundation
-import AlamofireImage
 
 class WorkoutViewController: UIViewController {
 
@@ -44,6 +42,11 @@ class WorkoutViewController: UIViewController {
                 self.targetLabel.text = workout["target"] as? String
                 self.equipmentListLabel.text = workout["equipment"] as? String
                 
+                var gifURL: String = workout["gifUrl"] as! String
+                gifURL.insert("s", at: gifURL.index(gifURL.startIndex, offsetBy: 4))
+                print(gifURL)
+                let image = UIImage.gifImageWithURL(gifURL)
+                self.workoutView.image = image
             }
         }
 

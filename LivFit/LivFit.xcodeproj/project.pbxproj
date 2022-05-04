@@ -11,6 +11,8 @@
 		27C5309328068B570007A3C7 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C5309228068B570007A3C7 /* RecipeCell.swift */; };
 		34002DEE0D4226EE75203E68 /* Pods_iEats_iEatsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */; };
 		494DF89F2822346C000E4A86 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494DF89E2822346C000E4A86 /* RecipesViewController.swift */; };
+		497E5403282250D8005F3937 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E5402282250D8005F3937 /* WorkoutsViewController.swift */; };
+		497E540528225292005F3937 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497E540428225292005F3937 /* WorkoutTableViewCell.swift */; };
 		49BCF0FF280685620019B736 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BCF0FE280685620019B736 /* RecipeViewController.swift */; };
 		49C461542818AB38000D3CE8 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C461532818AB38000D3CE8 /* WorkoutViewController.swift */; };
 		49C461572818B8E5000D3CE8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 49C461562818B8E5000D3CE8 /* AlamofireImage */; };
@@ -52,6 +54,8 @@
 		2CB96893B442A52283EB02AD /* Pods_iEatsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEatsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A5D1C61EF49A5BF2303FFA /* Pods-iEats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats.debug.xcconfig"; path = "Target Support Files/Pods-iEats/Pods-iEats.debug.xcconfig"; sourceTree = "<group>"; };
 		494DF89E2822346C000E4A86 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		497E5402282250D8005F3937 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		497E540428225292005F3937 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		49BCF0FE280685620019B736 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		49C461532818AB38000D3CE8 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		49C461582818CE3A000D3CE8 /* gifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoader.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */,
 				8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */,
 				8CC3B8632805E53E00F56A97 /* Main.storyboard */,
+				497E540428225292005F3937 /* WorkoutTableViewCell.swift */,
+				497E5402282250D8005F3937 /* WorkoutsViewController.swift */,
 				494DF89E2822346C000E4A86 /* RecipesViewController.swift */,
 				49BCF0FE280685620019B736 /* RecipeViewController.swift */,
 				49C461532818AB38000D3CE8 /* WorkoutViewController.swift */,
@@ -440,7 +446,9 @@
 				8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */,
 				8CC3B8602805E53E00F56A97 /* SceneDelegate.swift in Sources */,
 				49D492B7280FDB3A00266FB4 /* NSAttributedStringExtension.swift in Sources */,
+				497E5403282250D8005F3937 /* WorkoutsViewController.swift in Sources */,
 				27C5309328068B570007A3C7 /* RecipeCell.swift in Sources */,
+				497E540528225292005F3937 /* WorkoutTableViewCell.swift in Sources */,
 				8CC3B8902806549F00F56A97 /* RegisterViewController.swift in Sources */,
 				49C461592818CE3A000D3CE8 /* gifLoader.swift in Sources */,
 				494DF89F2822346C000E4A86 /* RecipesViewController.swift in Sources */,

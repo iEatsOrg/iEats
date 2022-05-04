@@ -44,8 +44,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
         let intermediate = recipes[indexPath.row]
-        let recipe = intermediate["recipe"] as! NSDictionary
-        print(recipe["label"]!)
+        let recipe = intermediate["recipe"] as! [String : Any]
         let labels = recipe["healthLabels"] as! [String]
 
         let dishNameLabel = recipe["label"] as! String
@@ -71,11 +70,12 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
 
-        print("Loaading up the details screen")
+        print("Loading up the details screen")
 
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let recipe = recipes[indexPath.row]
+        let intermediate = recipes[indexPath.row]
+        let recipe = intermediate["recipe"] as! [String : Any]
 
         let detailsViewController = segue.destination as! RecipeViewController
         detailsViewController.recipe = recipe

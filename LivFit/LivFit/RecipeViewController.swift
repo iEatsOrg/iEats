@@ -28,49 +28,31 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let totalNutrients = recipe["totalNutrients"] as! [String:Any]?
+        let protein = totalNutrients?["PROCNT"] as! [String:Any]?
+        let fat = totalNutrients?["FAT"] as! [String:Any]?
+        let carb = totalNutrients?["CHOCDF"] as! [String:Any]?
+        let p = String(format: "%@", protein?["quantity"] as! CVarArg)
+        let f = String(format: "%@", fat?["quantity"] as! CVarArg)
+        let c = String(format: "%@", carb?["quantity"] as! CVarArg)
+
+        let labels = recipe["healthLabels"] as! [String]
+        var healthLabels = ""
         
-//        API setup to grab recipe
-        let url = URL(string: "https://api.edamam.com/api/recipes/v2/b79327d05b8e5b838ad6cfd9576b30b6?type=public&app_id=bae79dc0&app_key=6f9f2700d9cde993e68d9596657afe36")!
-        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
-        let task = session.dataTask(with: request) { (data, response, error) in
-            // This will run when the network request returns
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let data = data {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                var healthLabels = ""
-
-                self.recipe = dataDictionary["recipe"] as! [String:Any]?
-                
-                let totalNutrients = self.recipe["totalNutrients"] as! [String:Any]?
-                let protein = totalNutrients?["PROCNT"] as! [String:Any]?
-                let fat = totalNutrients?["FAT"] as! [String:Any]?
-                let carb = totalNutrients?["CHOCDF"] as! [String:Any]?
-                let p = String(format: "%@", protein?["quantity"] as! CVarArg)
-                let f = String(format: "%@", fat?["quantity"] as! CVarArg)
-                let c = String(format: "%@", carb?["quantity"] as! CVarArg)
-
-                let labels = self.recipe["healthLabels"] as! [String]
-                
-                for label in labels {
-                    healthLabels += label + ", "
-                }
-                
-                self.dishNameLabel.text = self.recipe["label"]! as? String
-                self.healthLabel.text = healthLabels
-                self.numOfServingsLabel.text = self.recipe["yield"]! as? String
-                self.calAmountLabel.text = self.recipe["calories"]! as? String
-                self.proteinAmountLabel.text = p
-                self.fatAmountLabel.text = f
-                self.carbAmountLabel.text = c
-                
-                let imageURL = URL(string: self.recipe["image"] as! String)
-                self.recipeView.af.setImage(withURL: imageURL!)
-
-             }
+        for label in labels {
+            healthLabels += label + ", "
         }
-        task.resume()
+        
+        self.dishNameLabel.text = recipe["label"]! as? String
+        self.healthLabel.text = healthLabels
+        self.numOfServingsLabel.text = String(format: "%@", recipe["yield"] as! CVarArg)
+        self.calAmountLabel.text = String(format: "%@", recipe["calories"] as! CVarArg)
+        self.proteinAmountLabel.text = p
+        self.fatAmountLabel.text = f
+        self.carbAmountLabel.text = c
+        
+        let imageURL = URL(string: recipe["image"] as! String)
+        recipeView.af.setImage(withURL: imageURL!)
         
         updateMoreInfo()
         updateGetRecipe()

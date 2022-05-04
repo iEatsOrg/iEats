@@ -31,7 +31,6 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
                 self.recipes = dataDictionary["hits"] as! [[String:Any]]
-
                 self.tableView.reloadData()
             }
         }
@@ -43,21 +42,22 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell") as! RecipeCell
-        let recipe = recipes[indexPath.row]
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
+        let intermediate = recipes[indexPath.row]
+        let recipe = intermediate["recipe"] as! NSDictionary
+        print(recipe["label"]!)
         let labels = recipe["healthLabels"] as! [String]
 
         let dishNameLabel = recipe["label"] as! String
         let foodLabelOne = labels[0]
         let foodLabelTwo = labels[1]
-        let calAmountLabel = recipe["calories"]! as? String
-        
+        let calAmountLabel = String(format: "%@", recipe["calories"] as! CVarArg)
+
         cell.dishNameLabel.text = dishNameLabel
         cell.foodLabelOne.text = foodLabelOne
         cell.foodLabelTwo.text = foodLabelTwo
         cell.calAmountLabel.text = calAmountLabel
-        
+
         let imageURL = URL(string: recipe["image"] as! String)
         cell.dishView.af.setImage(withURL: imageURL!)
 
@@ -70,16 +70,16 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        
+
         print("Loaading up the details screen")
-        
+
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
         let recipe = recipes[indexPath.row]
-        
+
         let detailsViewController = segue.destination as! RecipeViewController
         detailsViewController.recipe = recipe
-        
+
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

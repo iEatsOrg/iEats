@@ -31,13 +31,13 @@
       "size" : "40x40"
     },
     {
-      "filename" : "dcf04604b9bf9374ee40bcdd8050c870 copy-1.jpg",
+      "filename" : "livfitLogo.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "dcf04604b9bf9374ee40bcdd8050c870 copy 2-1.jpg",
+      "filename" : "livfitLogo2.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -91,17 +91,6 @@
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
-    },
-    {
-      "filename" : "dcf04604b9bf9374ee40bcdd8050c870 copy 2.jpg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "dcf04604b9bf9374ee40bcdd8050c870 copy.jpg",
-      "idiom" : "universal",
-      "scale" : "1x",
-      "unassigned" : true
     }
   ],
   "info" : {

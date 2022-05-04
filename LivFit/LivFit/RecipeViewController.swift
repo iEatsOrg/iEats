@@ -56,7 +56,7 @@ class RecipeViewController: UIViewController {
                 for label in labels {
                     healthLabels += label + ", "
                 }
-                                  
+                
                 self.dishNameLabel.text = self.recipe["label"]! as? String
                 self.healthLabel.text = healthLabels
                 self.numOfServingsLabel.text = self.recipe["yield"]! as? String

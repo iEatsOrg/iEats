@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p2m-cf-1ov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XLc-Yg-r3h">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -286,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="1399.5535714285713"/>
         </scene>
-        <!--FavoritesPage-->
+        <!--RecipesPage-->
         <scene sceneID="BV0-MO-k5Q">
             <objects>
-                <viewController id="ef9-FL-400" userLabel="FavoritesPage" sceneMemberID="viewController">
+                <viewController id="ef9-FL-400" userLabel="RecipesPage" customClass="RecipesViewController" customModule="LivFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5jw-5s-t0n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,6 +355,11 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="calAmountLabel" destination="5aK-So-59d" id="KnZ-H1-88H"/>
+                                            <outlet property="dishNameLabel" destination="F8x-ZT-zML" id="KIp-L0-ADT"/>
+                                            <outlet property="dishView" destination="O13-dX-MuM" id="Sbi-Wm-CWi"/>
+                                            <outlet property="foodLabelOne" destination="Zas-dL-rWt" id="HQN-jk-4hR"/>
+                                            <outlet property="foodLabelTwo" destination="vDL-55-8ZW" id="C5P-07-wZG"/>
                                             <segue destination="EKz-74-xih" kind="show" id="kGr-TR-so7"/>
                                         </connections>
                                     </tableViewCell>
@@ -367,6 +372,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="pcf-5B-yrz"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="fko-ky-jtd" id="yqc-eK-N4g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPp-hr-J11" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

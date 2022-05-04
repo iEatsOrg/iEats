@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i7E-Hz-BY5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G6K-8Q-vQb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -517,8 +517,8 @@
         <scene sceneID="0n4-DF-TXC">
             <objects>
                 <navigationController title="Workouts" id="i7E-Hz-BY5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aH4-Zh-YDc"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Drl-Yy-0cL">
+                    <tabBarItem key="tabBarItem" title="Workouts" id="aH4-Zh-YDc" userLabel="Workouts"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Drl-Yy-0cL" userLabel="Workouts">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

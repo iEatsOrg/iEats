@@ -31,11 +31,11 @@ Suggests healthy recipes for users to make and also exercises they can do to sta
 * - [x] Register page logic
 * - [X] Create and Setup Database
 * - [x] All recipes page design.
-* - [ ] All recipes page logic.
+* - [x] All recipes page logic.
 * - [x] Recipe page design.
 * - [x] Recipe page logic.
-* - [ ] All workouts page design.
-* - [ ] All workouts page logic.
+* - [x] All workouts page design.
+* - [x] All workouts page logic.
 * - [x] Workout page design.
 * - [x] Workout page logic.
 * - [x] Landing page.
@@ -163,3 +163,4 @@ Optional:
 <img src="Week1.gif">
 <img src="Week2.gif">
 <img src="Week3.gif">
+<img src="Week4.gif">

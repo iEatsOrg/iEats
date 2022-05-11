@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G6K-8Q-vQb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G6K-8Q-vQb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="-662" y="1"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="E7j-M7-zWZ">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="fDq-DF-TXd" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="fDq-DF-TXd" customClass="HomeViewController" customModule="LivFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZNY-NR-HW0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,24 @@
                         <viewLayoutGuide key="safeArea" id="2sQ-Bu-Avq"/>
                         <color key="backgroundColor" red="0.86666667460000002" green="0.7019608021" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XF3-81-P0z"/>
+                    <navigationItem key="navigationItem" id="XF3-81-P0z">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" style="plain" id="Sbn-uZ-36x">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dhr-Gd-Zzw">
+                                <rect key="frame" x="20" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <connections>
+                                <action selector="onLogout:" destination="fDq-DF-TXd" id="11u-eb-SHH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="usernameField" destination="1po-Jl-d9q" id="kHc-re-WAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAz-Kt-ley" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,7 +164,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3f9-UZ-V2s">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="WOw-Bn-wfB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="homeController" modalPresentationStyle="fullScreen" id="WOw-Bn-wfB" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zAQ-ai-hfc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -700,7 +717,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FjE-zJ-WKh"/>
+        <segue reference="PUz-kI-ar3"/>
+        <segue reference="uTz-EI-BAu"/>
         <segue reference="EkT-Wp-cKI"/>
     </inferredMetricsTieBreakers>
     <resources>

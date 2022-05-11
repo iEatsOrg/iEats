@@ -18,6 +18,7 @@
 		49C461572818B8E5000D3CE8 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 49C461562818B8E5000D3CE8 /* AlamofireImage */; };
 		49C461592818CE3A000D3CE8 /* gifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C461582818CE3A000D3CE8 /* gifLoader.swift */; };
 		49D492B7280FDB3A00266FB4 /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D492B6280FDB3A00266FB4 /* NSAttributedStringExtension.swift */; };
+		8C95CAA1282B224A0023F60D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95CAA0282B224A0023F60D /* HomeViewController.swift */; };
 		8CC3B85E2805E53E00F56A97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */; };
 		8CC3B8602805E53E00F56A97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */; };
 		8CC3B8652805E53E00F56A97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3B8632805E53E00F56A97 /* Main.storyboard */; };
@@ -63,6 +64,7 @@
 		5579184D64638B415FDA3699 /* Pods_iEats_iEatsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iEats_iEatsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703F2E4578B41B1A9A5536EA /* Pods-iEats-iEatsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEats-iEatsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iEats-iEatsUITests/Pods-iEats-iEatsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F571DFEBAAB326A485BA641 /* Pods-iEatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iEatsTests.release.xcconfig"; path = "Target Support Files/Pods-iEatsTests/Pods-iEatsTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C95CAA0282B224A0023F60D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8CC3B85A2805E53E00F56A97 /* LivFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3B85D2805E53E00F56A97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC3B85F2805E53E00F56A97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				8CC3B88D2805EBCC00F56A97 /* LoginViewController.swift */,
 				8CC3B88F2806549F00F56A97 /* RegisterViewController.swift */,
 				27C5309228068B570007A3C7 /* RecipeCell.swift */,
+				8C95CAA0282B224A0023F60D /* HomeViewController.swift */,
 			);
 			path = LivFit;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				8CC3B8902806549F00F56A97 /* RegisterViewController.swift in Sources */,
 				49C461592818CE3A000D3CE8 /* gifLoader.swift in Sources */,
 				494DF89F2822346C000E4A86 /* RecipesViewController.swift in Sources */,
+				8C95CAA1282B224A0023F60D /* HomeViewController.swift in Sources */,
 				49BCF0FF280685620019B736 /* RecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
